@@ -1,3 +1,4 @@
+/* 
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "e2-micro"
@@ -20,8 +21,6 @@ resource "google_compute_network" "vpc_network" {
   name                    = "terraform-network"
   auto_create_subnetworks = "true"
 }
-
-/* 
 resource "google_storage_bucket" "auto-expire" {
   name          = "level-slate-405200-bucket"
   location      = "US"
